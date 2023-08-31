@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/tailwind.css" rel="stylesheet">
+    <title>File Upload</title>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-lg mx-auto mt-10">
+        <h1 class="text-3xl font-bold mb-5">File Upload</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="mb-5">
+                <input type="file" name="file" class="border p-2" accept="image/*">
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
+
